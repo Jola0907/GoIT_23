@@ -1,66 +1,46 @@
 function myFunction() {
-    const element = document.getElementById("id01");
-    element.innerHTML = "New Heading";
-  }
-  ​
-  function myColorChange() {
-    const element = document.getElementById("id01");
-    element.style.color = "red";
-  }
-  ​
-  ​
-  function mojaFunkcja(imie) {
-  ​
-      const clients = ["Mango", "Poly", "Ajax"];
-      const clientNameToFind = "Patryk";
-      let message;
-      
-      for (const client of clients) {
-      
-        if (client === imie) {
-          message = "Klient z takim imieniem jest w bazie danych!";
-          break;
-        }
-      
-        message = "Nie znaleźliśmy takiego klienta w bazie danych!";
-      }
-      
-      console.log(message);
-      
-  ​
-  }
+  const element = document.getElementById("id01");
+  element.innerHTML = "New Heading";
+}
 
+function myColorChange() {
+  const element = document.getElementById("id01");
+  element.style.color = "red";
+}
 
-
-const book = {
-  title: "The Last Kingdom",
-  author: "Bernard Cornwell",
-  genres: ["historical prose", "adventure"],
-  isPublic: true,
-  rating: 8.38,
+const przesylka = {
+  name: "",
+  ulica: "",
 };
 
-const bookTitle = book.title;
-console.log(bookTitle);// 'The Last Kingdom'
-
-const bookGenres = book.genres;
-console.log(bookGenres);// ['historical prose', 'adventurs']
-
-const bookPrice = book.price;
-console.log(bookPrice)
-
-const user = {
-  name: "Jacques Gluke",
-  tag: "jgluke",
-  location: {
-    country: "Jamaica",
-    city: "Ocho Rios",
-  },
-  hobbies: ["swiming", "music", "sci-fi"],
+const przesylka2 = {
+  name: "",
+  ulica: "",
 };
 
-const loc = user.location;
-console.log(loc);
+przesylka2.waga = 20;
+przesylka.name = "List";
+przesylka2.name = "Paczka";
 
-const country = user.location.country;
-console.log(country)
+
+function mojaFunkcja1() {
+
+  const element = document.getElementById("id01");
+  informacja = "Typ twojej przesylki to: " + przesylka.name;
+  element.innerHTML = informacja;
+
+  const element2 = document.getElementById("id02");
+  informacja = "Waga twojej przesylki to: " + przesylka.waga + " kg";
+  element2.innerHTML = informacja;
+
+}
+
+function mojaFunkcja2() {
+
+  const element = document.getElementById("id01");
+  informacja = "Typ twojej przesylki to: " + przesylka.name;
+  element.innerHTML = informacja;
+
+  const element2 = document.getElementById("id02");
+  informacja = "Waga twojej przesylki to: " + przesylka.waga + " kg";
+  element2.innerHTML = informacja;
