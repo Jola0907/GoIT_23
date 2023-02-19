@@ -1,3 +1,5 @@
+
+
 function myFunction() {
   const element = document.getElementById("id01");
   element.innerHTML = "New Heading";
@@ -30,7 +32,7 @@ function mojaFunkcja1() {
   element.innerHTML = informacja;
 
   const element2 = document.getElementById("id02");
-  informacja = "Waga twojej przesylki to: " + przesylka.waga + " kg";
+  informacja = "Przesyłka nie posiada wagi";
   element2.innerHTML = informacja;
 
 }
@@ -38,9 +40,11 @@ function mojaFunkcja1() {
 function mojaFunkcja2() {
 
   const element = document.getElementById("id01");
-  informacja = "Typ twojej przesylki to: " + przesylka.name;
+  informacja = "Typ twojej przesylki to: " + przesylka2.name;
   element.innerHTML = informacja;
 
   const element2 = document.getElementById("id02");
-  informacja = "Waga twojej przesylki to: " + przesylka.waga + " kg";
+  informacja = "Waga twojej przesylki to: " + przesylka2.waga + " kg";
   element2.innerHTML = informacja;
+
+}
