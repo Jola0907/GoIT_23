@@ -48,3 +48,19 @@ console.log(bookGenres);// ['historical prose', 'adventurs']
 
 const bookPrice = book.price;
 console.log(bookPrice)
+
+const user = {
+  name: "Jacques Gluke",
+  tag: "jgluke",
+  location: {
+    country: "Jamaica",
+    city: "Ocho Rios",
+  },
+  hobbies: ["swiming", "music", "sci-fi"],
+};
+
+const loc = user.location;
+console.log(loc);
+
+const country = user.location.country;
+console.log(country)
